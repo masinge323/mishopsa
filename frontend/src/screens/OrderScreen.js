@@ -105,6 +105,7 @@ const OrderScreen = ({ match, history }) => {
                 <a href={`mailto:${order.user.email}`}>{order.user.email}</a>
               </p>
               <p>
+                <p className="danger"><strong>Warning: </strong>Dear {order.user.name}, please note that items that cost less than R499.99 will be charged a delivery fee of R59.99(</p>
                 <strong>Address:</strong>
                 {order.shippingAddress.address}, {order.shippingAddress.city}{' '}
                 {order.shippingAddress.postalCode},{' '}
