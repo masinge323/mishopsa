@@ -9,6 +9,7 @@ import Paginate from '../components/Paginate'
 import ProductCarousel from '../components/ProductCarousel'
 import Meta from '../components/Meta'
 import { listProducts } from '../actions/productActions'
+import '../index.css'
 
 const HomeScreen = ({ match }) => {
   const keyword = match.params.keyword
@@ -26,7 +27,7 @@ const HomeScreen = ({ match }) => {
 
   return (
     <>
-      <Navbar className="w-100 py-2 my-1 text-center light" bg='dark'>Spend R500 and above with us and get free delivery right at your door!</Navbar>
+      <Navbar className="w-100 py-2 my-1 text-center burner-text" bg='dark'>Spend R500 and above with us and get free delivery right at your door!</Navbar>
       <Meta />
       {!keyword ? (
         <ProductCarousel />
