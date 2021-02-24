@@ -26,7 +26,7 @@ const HomeScreen = ({ match }) => {
 
   return (
     <>
-      <Navbar className="w-100 py-2 mb-1 text-center" variant="dark" bg='dark'>Spend R500 and above with us and get free delivery right at your door!</Navbar>
+      <Navbar className="w-100 py-2 mb-1 text-center light" bg='dark'>Spend R500 and above with us and get free delivery right at your door!</Navbar>
       <Meta />
       {!keyword ? (
         <ProductCarousel />
