@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import {Nav, Row, Col } from 'react-bootstrap'
+import {Navbar, Row, Col } from 'react-bootstrap'
 import Product from '../components/Product'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
@@ -26,7 +26,7 @@ const HomeScreen = ({ match }) => {
 
   return (
     <>
-      <Nav className="w-100 py-2 mb-1 text-center" variant="dark" bg='dark'>Spend R500 and above with us and get free delivery right st your door!</Nav>
+      <Navbar className="w-100 py-2 mb-1 text-center" variant="dark" bg='dark'>Spend R500 and above with us and get free delivery right at your door!</Navbar>
       <Meta />
       {!keyword ? (
         <ProductCarousel />
